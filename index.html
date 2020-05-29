@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wapik</title>
+    <script src="https://kit.fontawesome.com/48fa3707e1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -13,15 +17,19 @@
             <div class="navigation">
                 <div class="navigation__logo">
                     <span class="logo__text">wapik</span>
+                    <div class="logo__phone_wrap">
+                        <i class="fas fa-phone-alt logo__ico"></i>
+                        <span class="logo_phone">+62 202 555 0117</span>
+                    </div>
                 </div>
                 <div class="navigation__menu">
 
                     <!-- навигация десктопа -->
                     <ul class="menu__list">
                         <li class="list__item list__item_active"><a href="#">home</a></li>
-                        <li class="list__item"><a href="#">about us</a></li>
-                        <li class="list__item"><a href="#">pricing</a></li>
-                        <li class="list__item"><a href="#">contact us</a></li>
+                        <li class="list__item header_opacity"><a href="#">about us</a></li>
+                        <li class="list__item header_opacity"><a href="#">pricing</a></li>
+                        <li class="list__item header_opacity"><a href="#">contact us</a></li>
                         <li class="list__item"><button class="list_item_btn">get started</button></li>
                     </ul>
 
@@ -56,7 +64,8 @@
     <div class="features">
         <div class="features__text">
             <h2 class="features__text_head">Best of our features</h2>
-            <span class="features__text_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <div class="header-line"></div>
+            <span class="features__p features__text_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
             </span>
         </div>
@@ -85,29 +94,37 @@
         </div>
         <div class="features__icons">
             <div class="features__icons_item features__icons_cross">
-                <img src="./img/features_4.png" alt="">
-                <h3 class="features__text_h3">Cross Browser Compatibility</h3>
+                <div class="features__icons_wrap clearfix">
+                    <img class="features-ico__img" src="./img/features_4.png" alt="">
+                    <h3 class="features__text_h3">Cross Browser Compatibility</h3>
+                </div>
                 <p class="features__text_p">Donec ullamcorper nulla non metus auctor fringilla. 
                     Donec id elit non mi porta gravida at eget metus.
                 </p>
             </div>
             <div class="features__icons_item features__icons_idea">
-                <img src="./img/features_5.png" alt="">
-                <h3 class="features__text_h3">Creative Idea</h3>
+                <div class="features__icons_wrap clearfix">
+                    <img class="features-ico__img" src="./img/features_5.png" alt="">
+                    <h3 class="features__text_h3">Creative Idea</h3>
+                </div>
                 <p class="features__text_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Vestibulum id ligula porta felis euismod semper.
                 </p>
             </div>
             <div class="features__icons_item features__icons_pixel">
-                <img src="./img/features_6.png" alt="">
-                <h3 class="features__text_h3">Pixel Perfect</h3>
+                <div class="features__icons_wrap clearfix">
+                    <img class="features-ico__img" src="./img/features_6.png" alt="">
+                    <h3 class="features__text_h3">Pixel Perfect</h3>
+                </div>
                 <p class="features__text_p">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. 
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
             </div>
             <div class="features__icons_item features__icons_ever">
-                <img src="./img/features_7.png" alt="">
-                <h3 class="features__text_h3">Free Forever and Ever</h3>
+                <div class="features__icons_wrap clearfix">
+                    <img class="features-ico__img" src="./img/features_7.png" alt="">
+                    <h3 class="features__text_h3">Free Forever and Ever</h3>
+                </div>
                 <p class="features__text_p">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. 
                     Donec id elit non mi porta gravida at eget metus.
                 </p>
@@ -118,12 +135,13 @@
     <div class="template">
         <div class="template__head">
             <h2 class="features__text_head">Looking for the perfect template to use?</h2>
+            <div class="header-line"></div>
             <span class="features__text_p">Donec id elit non mi porta gravida at eget metus.</span>
         </div>
         <div class="template__text">
             <img src="./img/hand.png" alt="">
             <div class="template__text_aside">
-                <h3 class="features__text_h3">Responsive Ready</h3>
+                <h3 class="features__text_head">Responsive Ready</h3>
                 <p class="features__text_p">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, 
                     ut fermentum massa justo sit amet risus. Praesent commodo cursus magna, 
                     vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. 
@@ -131,8 +149,8 @@
                     Vestibulum id ligula porta felis euismod semper.
                 </p>
                 <ul>
-                    <li class="features__text_p">Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
-                    <li class="features__text_p">Donec id elit non mi porta gravida at eget metus.</li>
+                    <li class="listStyleImage features__text_p">Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
+                    <li class="listStyleImage features__text_p">Donec id elit non mi porta gravida at eget metus.</li>
                 </ul>
             </div>
         </div>
@@ -145,7 +163,7 @@
                 Thank you very much for creating this impressive template!
             </p>
             <span class="direct__text_name">Valeria Boltmeva</span><br>
-            <span>Director of Acme.Inc</span>
+            <span class="direct__foot">Director of Acme.Inc</span>
         </div>
         <img src="./img/valentine.png" alt="">
     </div>
@@ -170,70 +188,74 @@
     <div class="pricing">
         <div class="pricing__text">
             <h2 class="features__text_head">Pricing & Plan</h2>
-            <p class="features__text_p">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+            <div class="header-line"></div>
+            <p class="features__p features__text_p">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
                 Donec id elit non mi porta gravida at eget metus.</p>
         </div>
         <div class="pricing__col">
-            <div class="col__basic">
+            <div class="pricing__col_border col__basic animate__animated animate__backInUp wow">
                 <h3 class="col_palns">Basic</h3>
                 <h1 class="col_price">$199</h1>
                 <span class="col_month">/month</span>
-                <p class="features__text_p">Justo Fringilla<br>
+                <p class="features__text_p col_text">Justo Fringilla<br>
                     Mollis Sit Nullam<br>
                     Ultricies Purus Amet<br>
                     Cras Inceptos</p>
-                <button class="list_item_btn">Select Plan</button>
+                <button class="list_item_btn col-btn_lay">Select Plan</button>
             </div>
-            <div class="col__plus">
+            <div class="pricing__col_border col__plus">
                 <h3 class="col_palns">Plus</h3>
                 <h1 class="col_price">$399</h1>
                 <span class="col_month">/month</span>
-                <p class="features__text_p">Justo Fringilla<br>
+                <p class="features__text_p col_text">Justo Fringilla<br>
                     Mollis Sit Nullam<br>
                     Ultricies Purus Amet<br>
                     Cras Inceptos</p>
-                <button class="wrapper__btn">Select Plan</button>
+                <button class="wrapper__btn col-btn_mid">Select Plan</button>
             </div>
-            <div class="col__premium">
+            <div class="pricing__col_border col__premium animate__animated animate__backInUp wow">
                 <h3 class="col_palns">Premium</h3>
                 <h1 class="col_price">$699</h1>
                 <span class="col_month">/month</span>
-                <p class="features__text_p">Justo Fringilla<br>
+                <p class="features__text_p col_text">Justo Fringilla<br>
                     Mollis Sit Nullam<br>
                     Ultricies Purus Amet<br>
                     Cras Inceptos</p>
-                <button class="list_item_btn">Select Plan</button>
+                <button class="list_item_btn col-btn_lay">Select Plan</button>
             </div>
         </div>
         <h2 class="features__text_h3">Included with all Plans</h2>
+        <div class="header-line"></div>
         <div class="pricing__inc">
             <div class="inc_col_1 col">
                 <ul>
-                    <li class="features__text_p">Maecenas faucibus mollis interdum</li>
-                    <li class="features__text_p">Cras justo odio, dapibus ac facilisis</li>
-                    <li class="features__text_p">Fringilla Mattis</li>
+                    <li class="listStyleImage features__text_p">Maecenas faucibus mollis interdum</li>
+                    <li class="listStyleImage features__text_p">Cras justo odio, dapibus ac facilisis</li>
+                    <li class="listStyleImage features__text_p">Fringilla Mattis</li>
                 </ul>
             </div>
             <div class="inc_col_2 col">
                 <ul>
-                    <li class="features__text_p">Vestibulum id ligula porta felis euismod</li>
-                    <li class="features__text_p">Duis mollis, est non commodo luctus</li>
-                    <li class="features__text_p">Integer posuere</li>
+                    <li class="listStyleImage features__text_p">Vestibulum id ligula porta felis euismod</li>
+                    <li class="listStyleImage features__text_p">Duis mollis, est non commodo luctus</li>
+                    <li class="listStyleImage features__text_p">Integer posuere</li>
                 </ul>
             </div>
             <div class="inc_col_3 col">
                 <ul>
-                    <li class="features__text_p">Nulla vitae elit libero, a pharetra augue</li>
-                    <li class="features__text_p">Curabitur blandit tempus porttitor</li>
-                    <li class="features__text_p">Nullam quis risus eget urna mollis</li>
+                    <li class="listStyleImage features__text_p">Nulla vitae elit libero, a pharetra augue</li>
+                    <li class="listStyleImage features__text_p">Curabitur blandit tempus porttitor</li>
+                    <li class="listStyleImage features__text_p">Nullam quis risus eget urna mollis</li>
                 </ul>
             </div>
         </div>
         <div class="pricing__help">
             <img src="./img/Vector_Smart_Object.png" alt="">
-            <h2 class="features__text_h3">Need Help?</h2>
-            <p class="features__text_p">Contact our Customer Support that is always ready to help you with any possible
+            <h2 class="features__text_head pricing__help_head">Need Help?</h2>
+            <div class="header-line"></div>
+            <p class="features__p features__text_p">Contact our Customer Support that is always ready to help you with any possible
                 questions, problems or information.</p>
+            <br/>
             <span class="features__text_h3">support@wapik.com</span>
         </div>
     </div>
@@ -247,11 +269,11 @@
     <footer class="footer">
         <div class="footer__list features__text_p">
                 <div class="footer__list_cols">
-                <h1 class="features__text_h3">wapik</h1>
-                <p>@: hi@wapik.com</p>
+                <h1 class="features__text_h3 footer__head_wapik">wapik</h1>
+                <p>@: <strong>hi@wapik.com</strong></p>
                 <p>p: +62 202 555 0117</p>
-                <p>a: 610 Overlook Circle Suite 323</p>
-                <p>Kalamazoo, MI 49009</p>
+                <p>a: 610 Overlook Circle Suite 323
+                Kalamazoo, MI 49009</p>
             </div>
             <div class="footer__list_cols">
                 <h2 class="features__text_h3">Company</h2>
@@ -269,9 +291,12 @@
             </div>
             <div class="footer__list_cols">
                 <h2 class="features__text_h3">Newsletter</h2>
-                <p>Subscribe to our newsletter and get all</p>
-                <p>the cool news</p>
-                <p>Enter Email</p>
+                <p>Subscribe to our newsletter and get all
+                the cool news</p>
+                <div class="footer__email">
+                    <input class="email_input" type="text" placeholder="Enter Email">
+                    <i class="fab fa-telegram-plane fa-2x"></i>
+                </div>
             </div>
         </div>
         <div class="footer__icons">
